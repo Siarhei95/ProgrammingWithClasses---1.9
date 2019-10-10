@@ -23,12 +23,11 @@ public class Test {
         bookShop.addBookList(new Book("Герой нашего времени","Лермонтов","Воронеж",1840, 532, 176, "Твердый"));
         bookShop.addBookList(new Book("Гарри Поттер", "Роулинг","Англия",1997, 425, 234,"Мягкий"));
 
-        System.out.print("Enter the name of author(фамилия автора с большой буквы на русском языке): ");                                                                                    //отсортируем по фамилиям
+        System.out.print("Enter the name of author(фамилия автора с большой буквы на русском языке): ");
         List<Book> listFindAuthor = bookShop.getAuthors();
 
 
-        System.out.print("\nEnter the name of publishing house(название издательства с большой буквы на русском языке): ");                                                                                  ////отсортируем по именам
-        List<Book> listFindPublishingHouses = bookShop.getPublishingHouse();
+        System.out.print("\nEnter the name of publishing house(название издательства с большой буквы на русском языке): ");
 
 
         System.out.print("\nEnter the date from which to search: ");
