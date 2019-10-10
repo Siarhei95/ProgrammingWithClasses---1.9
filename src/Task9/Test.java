@@ -32,8 +32,8 @@ public class Test {
 
 
         System.out.print("\nEnter the date from which to search: ");
-        List<Book> listSortByDiapazonCreditCard = bookShop.getListByDiapasonCreaditCard();
-        for (Book c : listSortByDiapazonCreditCard) {
+        List<Book> listSortByDiapazon = bookShop.getListByDiapason();
+        for (Book c : listSortByDiapazon) {
             System.out.println(c);
         }
 
@@ -79,7 +79,7 @@ class Shop {
         return list;
     }
 
-    List<Book> getListByDiapasonCreaditCard() {
+    List<Book> getListByDiapason() {
         List<Book> list = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         int finder3 = scanner.nextInt();
